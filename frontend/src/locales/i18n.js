@@ -14,6 +14,7 @@ const messages = {
       password: 'Password',
       forgot_password: 'Forgot Password?',
       sign_up_now: 'Sign up now',
+      login_with_google: 'Login with Google'
     },
     placeholder: {
       email: 'Type Email',
@@ -40,6 +41,7 @@ const messages = {
       password: 'Mật khẩu',
       forgot_password: 'Quên mật khẩu?',
       sign_up_now: 'Đăng ký ngay',
+      login_with_google: 'Đăng nhập bằng Google'
     },
     placeholder: {
       email: 'Nhập Email',

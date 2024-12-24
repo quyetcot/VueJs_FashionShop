@@ -12,7 +12,7 @@ const routes = [
   {
     path: '/login',
     name: 'LOGIN',
-    component:()=>import('@/views/auth/loginForm.vue')
+    component:()=>import('@/views/auth/LoginForm.vue')
   },
   ...adminRoutes,
   ...clientRoutes
