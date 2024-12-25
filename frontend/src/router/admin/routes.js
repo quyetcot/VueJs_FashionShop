@@ -14,6 +14,11 @@ const adminRoutes = [
         path: routePaths.LIST_CATEGORIES,
         name: routeNames.LIST_CATEGORIES,
         component: () => import('@/views/admin/categories/ListCategories.vue')
+      },
+      {
+        path: routePaths.ADD_CATEGORY,
+        name: routeNames.ADD_CATEGORY,
+        component: () => import('@/views/admin/categories/AddCategory.vue')
       }
     ]
   }

@@ -1,4 +1,6 @@
 const apis ={
-  login:'/login'
+  login:'/login',
+  getCagories:'/category'
+  
 }
 export default apis;
