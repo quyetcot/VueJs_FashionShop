@@ -1,4 +1,5 @@
 export default {
-  DASHBOARD: '/admin/dashboard'
-}
+  DASHBOARD: 'dashboard',
 
+  LIST_CATEGORIES: 'categories'
+}

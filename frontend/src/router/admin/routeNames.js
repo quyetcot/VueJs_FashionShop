@@ -1,3 +1,5 @@
-export default{
-  DASHBOARD:'DASHBOARD'
+export default {
+  DASHBOARD: 'DASHBOARD',
+
+  LIST_CATEGORIES: 'LIST_CATEGORIES'
 }

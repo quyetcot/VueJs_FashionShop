@@ -14,6 +14,11 @@ const routes = [
     name: 'LOGIN',
     component:()=>import('@/views/auth/LoginForm.vue')
   },
+  {
+    path: '/admin/dashboard',
+    name: 'DASHBOARD',
+    component:()=>import('@/views/admin/Dashboard.vue')
+  },
   ...adminRoutes,
   ...clientRoutes
 ]

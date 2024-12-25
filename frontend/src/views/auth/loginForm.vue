@@ -119,14 +119,22 @@ export default {
       this.loading = true;
       try {
         const data = await authService.login(this.email, this.password);
-        console.log("Response from API:", data); // Kiểm tra giá trị response
+        console.log("Response from API:", data);
         if (data.role_id == 4) {
+          // this.$store.dispatch("toast/showToast", {
+          //   message: "Đăng nhập thành công!!!",
+          //   type: "success",
+          // });
           this.$router.push(routePathsAdmin.DASHBOARD);
         } else if (data.role_id == 1) {
           this.$router.push(routePathsClient.HOMEPAGE);
         }
       } catch (error) {
-        console.log("Error during login:", error); // Kiểm tra chi tiết lỗi
+        console.log("Error during login:", error);
+        this.$store.dispatch("toast/showToast", {
+          message: "Đăng nhập thất bại. Vui lòng kiểm tra lại thông tin!!!",
+          type: "error",
+        });
         this.valid = false;
       } finally {
         this.loading = false;

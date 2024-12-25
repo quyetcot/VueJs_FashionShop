@@ -5,11 +5,8 @@ const state = {
   timeout: 1000,
 };
 const mutations = {
-  SET_TOAST(state, { message, type, timeout }) {
-    (state.message = message),
-      (state.type = type),
-      (state.timeout = timeout || 1000),
-      (state.snackbar = true);
+  SET_TOAST(state, { message, type }) {
+    (state.message = message), (state.type = type), (state.snackbar = true);
   },
   HIDE_TOAST(state) {
     state.snackbar = false;
